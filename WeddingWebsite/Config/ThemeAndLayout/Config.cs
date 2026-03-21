@@ -48,7 +48,7 @@ public class Config : DefaultConfig, IWebsiteConfig
         var whiteFilledBox = new BoxStyle(BoxType.FilledRounded, new SectionTheme(Colour.White, Colours.Primary, null));
         var outlinedBox = new BoxStyle(BoxType.OutlinedSquare, new SectionTheme(Colour.White, Colours.Primary, null));
         
-        var bricks = new BackgroundImage("/img/15.jpeg", false, "1000px", null, 0.3, false);
+        var bricks = new BackgroundImage("/img/15.jpeg", false, "1000px", null, 0.3, CustomTextColour: brown);
         var flowers = new BackgroundImage("/bg/blue-flowers.png", false, "500px", new Colour(255, 255, 255, 150), 0.3, true);
     
         Sections = [
