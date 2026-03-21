@@ -28,7 +28,8 @@ public class Config : DefaultConfig, IWebsiteConfig
     // Default config will enable all optional features.
     public new OptionalFeatures OptionalFeatures { get; } = new OptionalFeatures
     {
-        Registry = new ActiveFeature()
+        Registry = new ActiveFeature(),
+        Rsvp = new ActiveFeature()
     };
 
     public Config() {
