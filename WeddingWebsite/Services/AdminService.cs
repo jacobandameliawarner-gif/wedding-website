@@ -23,7 +23,7 @@ public class AdminService(IStore store) : IAdminService
         return store.GetGuestsForAccount(userId);
     }
     
-    public GuestWithId? GetGuest(string userId, string guestId)
+    public Guest? GetGuest(string userId, string guestId)
     {
         return store.GetGuestsForAccount(userId).FirstOrDefault(g => g.Id == guestId);
     }
@@ -36,11 +36,6 @@ public class AdminService(IStore store) : IAdminService
     public void DeleteGuest(string guestId)
     {
         store.DeleteGuest(guestId);
-    }
-    
-    public string? GetAccountIdFromGuestId(string guestId)
-    {
-        return store.GetAccountIdFromGuestId(guestId);
     }
     
     public IEnumerable<AccountLog> GetAccountLogs(string userId)

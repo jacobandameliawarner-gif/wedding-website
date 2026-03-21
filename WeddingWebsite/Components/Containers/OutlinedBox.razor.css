@@ -23,6 +23,7 @@
 
     .horizontal .top-content {
         flex: 1;
+        max-height: 300px;
         overflow: hidden;
     }
 

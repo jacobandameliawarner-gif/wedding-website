@@ -10,5 +10,4 @@
 public class OptionalFeatures
 {
     public IOptionalFeature Registry = new InactiveFeature();
-    public IOptionalFeature Rsvp = new InactiveFeature();
 }

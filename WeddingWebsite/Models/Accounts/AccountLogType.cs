@@ -27,13 +27,4 @@ public enum AccountLogType
     
     [Description("Add guest")]
     AddGuest,
-    
-    [Description("Submit RSVP")]
-    SubmitRsvp,
-    
-    [Description("Delete RSVP")]
-    DeleteRsvp,
-    
-    [Description("Edit RSVP")]
-    EditRsvp
 }

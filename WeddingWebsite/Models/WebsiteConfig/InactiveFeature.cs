@@ -3,5 +3,5 @@
 public class InactiveFeature : IOptionalFeature
 {
     public bool IsActive() => false;
-    public string IsActiveString() => "not open";
+    public string IsActiveString() => "closed";
 }
