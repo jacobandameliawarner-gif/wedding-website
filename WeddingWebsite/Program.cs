@@ -31,7 +31,7 @@ builder.Services.AddScoped<IWebsiteConfig, Config>();
 // Recommended - Customise your RSVP form to gather the information that you need! You can safely ignore this until you
 // plan to open RSVPs. You should implement IRsvpForm - see DemoRsvpForm for an example. If you rename the file to
 // CustomRsvpForm, it will be ignored from git so that it is kept private.
-builder.Services.AddScoped<IRsvpForm, DemoRsvpForm>();
+builder.Services.AddScoped<IRsvpForm, RsvpForm>();
 
 // Optional - If you would like to use any functionality that requires credentials (e.g. google maps), please create a
 // file called Credentials.cs that implements ICredentials. This will be ignored from git so that it is kept private.
