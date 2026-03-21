@@ -31,9 +31,4 @@ public static class DateTimeExtensions
         var minutes = (int)span.TotalMinutes;
         return minutes <= 1 ? "1 minute" : $"{minutes} minutes";
     }
-    
-    public static string FormatDayAndMonth(this DateTime date)
-    {
-        return date.ToString("d MMMM");
-    }
 }

@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using WeddingWebsite.Components;
 using WeddingWebsite.Config.Credentials;
-using WeddingWebsite.Config.Rsvp;
 using WeddingWebsite.Config.Strings;
 using WeddingWebsite.Config.ThemeAndLayout;
 using WeddingWebsite.Config.WeddingDetails;
@@ -21,17 +20,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Required - All the information about your wedding. Please create your own implementation of IWeddingDetails.
 // See WeddingDetailsTemplate for a starting point. If you rename the file to RealWeddingDetails, it will be
 // ignored from git so that it is kept private.
-builder.Services.AddScoped<IWeddingDetails, SampleWeddingDetails>();
+builder.Services.AddScoped<IWeddingDetails, WeddingDetails>();
 
-// Recommended - Customise the theme and layout. Please create your own implementation of IWebsiteConfig. It is
+// Recommended - customise the theme and layout. Please create your own implementation of IWebsiteConfig. It is
 // recommended to have this also inherit from DefaultConfig. See DemoConfig for an example. If you rename the file
 // to CustomConfig, it will be ignored from git so that it is kept private.
-builder.Services.AddScoped<IWebsiteConfig, DefaultConfig>();
-
-// Recommended - Customise your RSVP form to gather the information that you need! You can safely ignore this until you
-// plan to open RSVPs. You should implement IRsvpForm - see DemoRsvpForm for an example. If you rename the file to
-// CustomRsvpForm, it will be ignored from git so that it is kept private.
-builder.Services.AddScoped<IRsvpForm, DemoRsvpForm>();
+builder.Services.AddScoped<IWebsiteConfig, Config>();
 
 // Optional - If you would like to use any functionality that requires credentials (e.g. google maps), please create a
 // file called Credentials.cs that implements ICredentials. This will be ignored from git so that it is kept private.
@@ -40,17 +34,15 @@ builder.Services.AddScoped<ICredentials, NoCredentials>();
 // Optional - If you'd like to customise the wording or translate into a different language, you can swap out for a
 // different implementation of IStringProvider. If you're only changing a few strings, you can inherit from
 // StandardBritishEnglish as is done in FriendlyBritishEnglish.
-builder.Services.AddScoped<IStringProvider, StandardBritishEnglish>();
+builder.Services.AddScoped<IStringProvider, CustomStrings>();
 
 
 builder.Services.AddScoped<IDetailsAndConfigValidator, DetailsAndConfigValidator>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
-builder.Services.AddScoped<IRsvpService, RsvpService>();
 builder.Services.AddScoped<IRegistryService, RegistryService>();
 builder.Services.AddScoped<ITodoService, TodoService>();
 builder.Services.AddScoped<IStore, Store>();
-builder.Services.AddScoped<IRsvpStore, RsvpStore>();
 builder.Services.AddScoped<IRegistryStore, RegistryStore>();
 builder.Services.AddScoped<ITodoStore, TodoStore>();
 

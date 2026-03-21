@@ -98,7 +98,3 @@ h1:focus {
 :root {
     --mud-palette-lines-inputs: #888 !important;
 }
-
-.dont-fill-width {
-    width: fit-content;
-}

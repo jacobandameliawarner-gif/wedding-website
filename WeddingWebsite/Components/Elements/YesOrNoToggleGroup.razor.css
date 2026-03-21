@@ -14,20 +14,16 @@ button {
 }
 
 .yes-button {
-    border-color: var(--mud-palette-success);
+    border-color: var(--mud-palette-success-darken);
     margin-right: 10px;
 }
 
 .yes-button.selected {
-    background-color: var(--mud-palette-success);
+    background-color: var(--mud-palette-success-darken);
 }
 
-button.enabled:hover {
+button:hover {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-}
-
-button.disabled:hover {
-    cursor: auto;
 }
 
 .no-button {
@@ -36,12 +32,4 @@ button.disabled:hover {
 
 .no-button.selected {
     background-color: var(--mud-palette-error-lighten);
-}
-
-button.disabled {
-    border-color: #aaa;
-}
-
-button.disabled.selected {
-    background-color: #aaa;
 }

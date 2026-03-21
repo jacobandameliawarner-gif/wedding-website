@@ -34,6 +34,11 @@ p {
     margin-bottom: 60px;
 }
 
+.guest {
+    display: flex;
+    align-items: center;
+}
+
 .change-password-buttons {
     margin-top: 20px;
     display: flex;
@@ -53,10 +58,20 @@ button:hover {
     cursor: pointer;
 }
 
-.cancel-button {
+.rsvp-button, .cancel-button {
     background: #aaa;
     border: #444;
     color: #444;
+}
+
+.rsvp-button {
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+.guests-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .warning-message {
