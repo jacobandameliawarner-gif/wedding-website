@@ -98,7 +98,7 @@ public class StandardBritishEnglish : IStringProvider
     public string RsvpAlreadySubmitted(string? contactMethod) => $"As your RSVP has been submitted, it is read-only. If you need to make any changes, please contact {contactMethod ?? "us"} and we'll try our best to accommodate them.";
     public string RsvpFormDescription => "Please complete this form once per guest. Your answers will not be saved until you submit, after which you will be unable to make any changes.";
     public string RsvpFormDescriptionContact(string? contactMethod) => $"If you have any questions, please contact {contactMethod ?? "us"}.";
-    public string RsvpAttendanceQuestion => "Will you be able to join us at our wedding?";
+    public string RsvpAttendanceQuestion => "We invite you to celebrate our wedding with us";
     public string RsvpLongYes => "Joyfully accept";
     public string RsvpLongNo => "Regretfully decline";
     public string? RsvpYesDescription => null;

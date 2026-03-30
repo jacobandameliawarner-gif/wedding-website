@@ -161,12 +161,12 @@ public sealed class WeddingDetails : IWeddingDetails
     
     public Venue CeremonyVenue { get; } = new(
         "Highfield Oval", 
-        new Location(51.82660574703517, -0.3598443120147474),
+        new Location(51.826616576630016, -0.35850816485589265), 
         "The Chapel, Highfield Oval, Harpenden AL5 4BX",
         new TravelDirections(
             [
-                new WebsiteSection(null, "The venue is a 10 minute drive from the M1 (J10), or it is a 20 minute walk from Harpenden train station. When arriving, use the code 2810 to open the gate. The site is closed to the public on Sunday afternoons, but please be aware of the residents who live there."),
-                new WebsiteSection("Parking", "Please use the map to see where you can park. Please do not drive on the Oval itself."),
+                new WebsiteSection(null, "The venue is a 10 minute drive from the M1 (J10), or a 20 minute walk from Harpenden train station. When arriving, use the code 2810 to open the gate. The site is closed to the public on Sunday afternoons, but please be aware of the residents who live there."),
+                new WebsiteSection("Parking", "There is plenty of parking as shown on the map, but please do not drive onto the Oval itself."),
                 new WebsiteSection("Want to know more about the chapel?", "https://www.harpenden-history.org.uk/harpenden-history/buildings/other-harpenden-buildings/the_oval_harpenden"),
             ],
             null,
