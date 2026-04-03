@@ -112,7 +112,8 @@ public sealed class WeddingDetails : IWeddingDetails
                 new WebsiteSection(null, "Amelia is Amelia. She loves being herself. She's finished Maths at Warwick and is now working at Dennis Eagle as a Data Analyst mixed with something else."),
                 new WebsiteSection("Hobbies", "Walking, puzzling and napping."),
                 new WebsiteSection("Fun Fact", "IDK yet")
-            ]
+            ],
+            Address: "68 Eastmoor Park AL5 1BP"
         ),
         new (
             new Name("Alice", "Humphriss"),

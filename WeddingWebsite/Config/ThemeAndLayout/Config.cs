@@ -10,7 +10,7 @@ namespace WeddingWebsite.Config.ThemeAndLayout;
 public class Config : DefaultConfig, IWebsiteConfig
 {
     public new WeddingColours Colours { get; } = new (
-        new Colour("#8c3f13"),  //#41a4bb "#61341a"
+        new Colour("#8c3f13", true),  //#41a4bb "#61341a"
         new Colour("#3399FF"),  //#3399FF
         new Colour("#fcff62"),  //#B6D7A8  Link Buttons
         new Colour("#e2b1f2")   //background colour
