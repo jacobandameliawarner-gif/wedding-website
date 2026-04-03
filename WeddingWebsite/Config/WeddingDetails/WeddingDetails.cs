@@ -113,7 +113,7 @@ public sealed class WeddingDetails : IWeddingDetails
                 new WebsiteSection("Hobbies", "Walking, puzzling and napping."),
                 new WebsiteSection("Fun Fact", "IDK yet")
             ],
-            Address: "68 Eastmoor Park AL5 1BP"
+            Address: "68 Eastmoor Park, Harpenden, AL5 1BP"
         ),
         new (
             new Name("Alice", "Humphriss"),
