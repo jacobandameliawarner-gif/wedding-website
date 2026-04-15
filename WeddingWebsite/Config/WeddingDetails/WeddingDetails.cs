@@ -92,7 +92,7 @@ public sealed class WeddingDetails : IWeddingDetails
             new Name("Jacob", "Warner"),
             Role.Groom,
             new ContactDetails(
-                new ContactOptions([ContactReason.Logistics, ContactReason.Website, ContactReason.SpecificPerson], [new EmailAddress("jacobewarmer@gmail.com")]),
+                new ContactOptions([ContactReason.Logistics, ContactReason.Website, ContactReason.SpecificPerson], [new EmailAddress("jacobewarner@gmail.com")]),
                 new ContactOptions(null, [new PhoneNumber("+44 7306 889587")])
             ),
             [
