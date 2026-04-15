@@ -168,8 +168,8 @@ public sealed class WeddingDetails : IWeddingDetails
             [
                 new WebsiteSection(null, "The venue is a 10 minute drive from the M1 (J10), or a 20 minute walk from Harpenden train station. When arriving, use the code 2810 to open the gate. The site is closed to the public on Sunday afternoons, but please be aware of the residents who live there."),
                 new WebsiteSection("Parking", "There is plenty of parking as shown on the map, but please do not drive onto the Oval itself."),
-                new WebsiteSection("Want to know more about the chapel?", []),
-                new WebsiteSection(new LinkButton("Find out More", "https://www.harpenden-history.org.uk/harpenden-history/buildings/other-harpenden-buildings/the_oval_harpenden"))
+                new WebsiteSection("Want to know more about the chapel?", "Please click the link below to find out more about the chapel."),
+                new WebsiteSection(new LinkButton("More Info", "https://www.harpenden-history.org.uk/harpenden-history/buildings/other-harpenden-buildings/the_oval_harpenden")),
             ],
             null,
             null,
