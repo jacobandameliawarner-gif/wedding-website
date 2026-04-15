@@ -13,7 +13,7 @@ public class Config : DefaultConfig, IWebsiteConfig
         new Colour("#8c3f13", true),  //#41a4bb "#61341a"
         new Colour("#3399FF"),  //#3399FF
         new Colour("#fcff62"),  //#B6D7A8  Link Buttons
-        new Colour("#e2b1f2")   //background colour
+        new Colour("#eed0f7")   //background colour
     );
     public new IReadOnlyList<Section> Sections { get; protected set; }
     public new TopButtonsConfig TopButtons { get; }
