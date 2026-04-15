@@ -1,12 +1,15 @@
 ﻿@page "/Admin"
 @using WeddingWebsite.Components.Admin
 @using WeddingWebsite.Components.Layouts
+@using WeddingWebsite.Models.ConfigInterfaces
 
 @attribute [Authorize(Roles = "Admin")]
 
 @layout SimpleLayout
 
-<PageTitle>Admin Page</PageTitle>
+@inject IStringProvider StringProvider
+
+<PageTitle>@StringProvider.PageTitle("Admin Page")</PageTitle>
 
 <h1>Admin Page</h1>
 
@@ -15,6 +18,7 @@
     <a href="/account/register" role="button" class="button">Add New Account</a>
     <a href="/todo" role="button" class="button">Go to To-Do List</a>
     <a href="/admin/rsvp/table" role="button" class="button">View RSVP Responses</a>
+    <a href="/admin/email/compose" role="button" class="button">Send Email</a>
 </div>
 
 <h2>Recent Activity</h2>
