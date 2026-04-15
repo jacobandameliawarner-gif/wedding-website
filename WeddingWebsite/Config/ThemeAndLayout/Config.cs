@@ -49,15 +49,14 @@ public class Config : DefaultConfig, IWebsiteConfig
         var whiteFilledBox = new BoxStyle(BoxType.FilledRounded, new SectionTheme(Colour.White, Colours.Primary, null));
         var outlinedBox = new BoxStyle(BoxType.OutlinedSquare, new SectionTheme(Colour.White, Colours.Primary, null));
         
-        var bricks = new BackgroundImage("/img/19.jpg", false, "1000px", null, 0.3, CustomTextColour: brown);
+        var flowers = new BackgroundImage("/img/19.jpg", false, "1000px", new Colour(255, 255, 255, 100), 0.3, CustomTextColour: brown);
         var planks = new BackgroundImage("/img/18.jpg", false, "1600px", null, 0, CustomTextColour: white);
-        var flowers = new BackgroundImage("/bg/blue-flowers.png", false, "500px", new Colour(255, 255, 255, 150), 0.3, true);
     
         Sections = [
             new Section.TodoListSummary(new SectionTheme(salmon, Colour.White, new BoxStyle(BoxType.FilledRounded, new SectionTheme(Colours.PrimaryBackground, Colour.White, null)))),
             //new Section.HowWeMet(new SectionTheme(purple, Colours.Primary, filledBox)),
             new Section.DressCode(new SectionTheme(planks, Colours.Primary, whiteFilledBox), true, false),
-            new Section.Timeline(new SectionTheme(bricks, Colours.Primary, outlinedBox), true, false),
+            new Section.Timeline(new SectionTheme(flowers, Colours.Primary, outlinedBox), true, false),
             new Section.TravelDirections(new SectionTheme(planks, Colours.Primary, whiteFilledBox)),
             //new Section.VenueShowcase(new SectionTheme(purple, Colours.Primary, filledBox)),
             //new Section.MeetWeddingParty(new SectionTheme(flowers, Colours.Primary, outlinedBox)),
