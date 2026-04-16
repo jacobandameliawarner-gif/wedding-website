@@ -52,7 +52,7 @@ public class RsvpForm : IRsvpForm
         )
     ]);
 
-    public DateTime? Deadline => null; // You should add your RSVP deadline here as it will be shown on the website.
+    public DateTime? Deadline => new DateTime(2026, 6, 28);
     
     public bool LongAttendanceResponses => true;
 }
