@@ -68,7 +68,8 @@ public class Config : DefaultConfig, IWebsiteConfig
         TopButtons = new TopButtonsConfig(
             [
                 new LinkButton("RSVP", "/rsvp"),
-                new LinkButton("Directions", "/#directions"),
+                new LinkButton("Registry", "/registry"),
+                new LinkButton("Directions", "/#directions")
             ]
         );
 
