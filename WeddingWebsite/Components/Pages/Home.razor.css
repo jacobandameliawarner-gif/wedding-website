@@ -10,7 +10,7 @@
     width: 100%;
     text-align: center;
     font-family: "Segoe Script", cursive; 
-    font-size: clamp(48px, 8vw, 96px);
+    font-size: clamp(56px, 10vw, 96px);
     line-height: 1.5;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -22,13 +22,10 @@
     .bride-and-groom-names span {
         display: block;
     }
-    .second-name {
-        line-height: 3;
-    }
 }
 
 .wedding-date {
-    margin-top: 5vh;
+    margin-top: 6vh;
     margin-bottom: 5vh;
     width: 100%;
     text-align: center;
